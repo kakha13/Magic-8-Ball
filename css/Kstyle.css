@@ -1,0 +1,183 @@
+@font-face{
+	font-family: "BPG Arial 2010";
+	src: url("../fonts/bgarial2010.eot");
+	src: 
+		url("../fonts/bgarial2010.otf") format("opentype"),
+		url("../fonts/bgarial2010.ttf") format("truetype");
+}
+@font-face{
+	font-family: "BPG Arial 2010 -small-";
+	src: url("../fonts/bgarial2010.eot");
+	src: 
+		url("../fonts/bgarial2010.ttf") format("truetype"),
+		url("../fonts/bgarial2010.otf") format("opentype");
+}
+
+
+body {
+font-family: "BPG Arial 2010 -small-";
+ -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.circle {
+ -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	
+border-radius:100%;
+  margin: 0;
+  position: relative;
+  background: radial-gradient(circle at 50% 120%, #000000, #000000 10%, #000000 80%, #000000 100%);
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	display: block;
+	margin:0 auto;
+  }
+.circle:before {
+
+  content: "";
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 0px, #ffffff, rgba(255, 255, 255, 0) 58%);
+  filter: blur(5px);
+  z-index: 2;
+}
+
+
+.circleInside {
+	border-radius:100%;
+	background: black;
+	margin:0 auto;
+	position:relative;
+	border:2px solid white;
+	z-index:100;
+	
+}
+
+
+.langs li{
+padding:8px;
+margin-bottom:2px;
+background:#000;
+z-index:11111111;
+float:left;
+list-style:none;
+}
+
+.langs {
+margin:0;
+padding:0;
+	text-align:center;
+	color:white;
+	font-size:18px;
+	
+	display:block; 
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid red;
+}
+
+.img {
+width:86%;
+margin:0 auto;
+position:relative;
+display: block;
+}
+
+#message {
+  color: white;
+  z-index: 1000;
+  position: absolute;
+  margin:0 auto;
+  display:block;
+  text-align: center;
+  opacity:1;
+  left: 0;
+  right: 0;
+  font-size: 18px; /* Some tweener fallback that doesn't look awful */ 
+  font-size: 2.5vw; 
+}
+
+.langs  li{
+cursor:pointer;
+}
+.langs  li:hover{
+background:grey;
+}
+.langs > .active {
+background:rgb(29, 70, 199);
+}
+
+
+.instruction img{
+height:29px;
+margin: 0;
+padding: 0;
+}
+.instruction {
+  padding: 4px !Important;
+background:white !Important;
+}
+
+.info {
+display:none;
+width:;
+text-align:center;
+font-size:20px;
+position:absolute;
+background:white;
+border:1px solid black;
+height:60%;
+top:0;
+z-index:11111111;
+left:0;
+right:0;
+bottom:0;
+}
+
+.closeText {
+
+text-align:center;
+font-size:20px;
+position:absolute;
+background:white;
+height:20px;
+display:block;
+z-index:11111111;
+padding:10px;
+bottom:1px;
+}
+
+.footer{
+display:block;
+height:60px;
+margin:0 auto;
+width:468px;
+position:absolute;
+left:0;right:0;
+text-align:center;
+bottom:1px;
+}
